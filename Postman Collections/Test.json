@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "b3e0495d-04e7-4903-aa6a-9de12e416969",
+		"name": "ddd1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"_postman_id": "89d555e5-76ee-4c16-8c38-1dcb72e4c41f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"{{username}}\", \"password\": \"{{password}}\",\"remember\":\"false\" ,\"recaptcha_response_field\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=2894339487178896&correlator=791677570010430&eid=31070872%2C31061166&output=ldjh&gdfp_req=1&vrg=2022120501&ptt=17&impl=fif&gdpr=0&us_privacy=1---&iu_parts=24132379%2CINTERSTITIAL_DemoGuru99&enc_prev_ius=%2F0%2F1&prev_iu_szs=1x1&ifi=1&adks=3772837431&sfv=1-0-40&ists=1&fas=8&eri=1&cust_params=TestMode%3DTrue&sc=1&cookie=ID%3Daece63427790acf9-226adfb8b1d800c1%3AT%3D1669870503%3AS%3DALNI_Mb96x-vDC5jfIH_ZKf2GrBwKXooAA&gpic=UID%3D00000b87e850f24f%3AT%3D1669870503%3ART%3D1671450287%3AS%3DALNI_Mb0ngG2FkuYkw2kg3cDpyyhCRTcBA&abxe=1&dt=1671450470691&lmt=1641482410&dlt=1671450469773&idt=248&biw=764&bih=649&scr_x=0&scr_y=0&btvi=-1&ucis=1&oid=2&u_his=5&u_h=768&u_w=1366&u_ah=720&u_aw=1366&u_cd=24&u_sd=1&u_tz=330&wsm=1&dmc=8&bc=31&uach=WyJXaW5kb3dzIiwiMTQuMC4wIiwieDg2IiwiIiwiMTA4LjAuMTQ2Mi41NCIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5LjEyNSJdLFsiTWljcm9zb2Z0IEVkZ2UiLCIxMDguMC4xNDYyLjU0Il1dLGZhbHNlXQ..&nvt=2&url=https%3A%2F%2Fdemo.guru99.com%2Ftest%2Fsuccess.html&ref=https%3A%2F%2Fdemo.guru99.com%2Ftest%2Flogin.html&frm=20&vis=1&psz=0x-1&msz=0x-1&fws=2&ohw=0&ga_vid=650390710.1669870503&ga_sid=1671450471&ga_hid=288991377&ga_fc=true&a3p=EloKDWNyd2RjbnRybC5uZXQSQDlmMjlkZWFhMjI1ZWI0NzI4MTM4OTM3OTFjNzMxNmQ1MzkzODNmZTI2YzhkODM1ODUzMWMwZDQ5YzAxNTk5YzQYzsHN0dIwSAASOwoKcHViY2lkLm9yZxIkNmNhYzc4OWUtY2JjNy00ZTI1LWEwZTEtOWEwNzI0MWVmODhmGMfBzdHSMEgAEvYBCg5lc3AuY3JpdGVvLmNvbRLaAUQ2WmVNVjlMWW5sclluTk1WVVZsZGpCUE1XTjVhVTFwWmpkc1JsVTVVM1JoTUZCbVVsWjBhVEpSYUZWcGNuRnRORlJNTXpsYWNrZHNUMlp4U0c0MGFERllha2REYUVKSU5IQWxNa1p1WldoWGVXaGtWR3B2VmpGUU9FczNaMkZrZFdGc1ZVWkVjbXgwZGtwUU5IUlBUMUIyTVhJeE9XWlZORUpvTkZwS1FqZE9iak40U1dJM1VYbHdUVFY2VDJSWFJsbHJibEpPWkZSd1REVnJkeVV6UkNVelJBGJbFzdHSMEgAEtYBCghydGJob3VzZRLAAU5nS0tzNEpkRHhYcHhucXF1Q0ovZkE4bHF1WGpnbDFtcmh5M3hwenAzVFZIZjNEU2NPdnVEYnBqNG9VczhsU2lsYzByKzdxU0hVVStQSDU5Ti9aVzFYaVdKVTBJOGZXNDQ2QStlL3NFNHRUeUtiVk1UWStJMUw2a1ZSNlRpNllvZ3JPaE1kWkRmZ2ZDVUdGeGc1UTlIN2ljQ1FtUTFWQURLZVp5bzM4Unk1VXhEQzZzSEJrMzR1VmRmWHEwL0JzZhidys3R0jBIABIUCgVvcGVueBiC2s3R0jBIAFICCG8SGQoKdWlkYXBpLmNvbRivvs3R0jBIAFICCGQSGwoMaWQ1LXN5bmMuY29tGIXPzdHSMEgAUgIIag..' \\\n  -H 'authority: securepubads.g.doubleclick.net' \\\n  -H 'accept: */*' \\\n  -H 'accept-language: en-US,en;q=0.9' \\\n  -H 'cookie: IDE=AHWqTUmfS5huh9LFDwBEEkdUyayor4JK_diS6Y4paxknocz8pcFjiCtt-CUsXxYPn6w; DSID=AOKRq4pzaGa_9IKXWyqbtYSmn84TkZj2GaaVlW6uolKF0TVx3zpt5egmfrQoiXZiPN_tx1wBDhUUdSM-xGzIw7K2TO5Ql7jeriKoA23NdpaT1LPVW-40JmqvDKqUwnmJJ_Qpy71U4u6KDyc8xNJALzGVdJLjYE6G7Rk4U4qow_6QjG39tp4KBFaL47pLMeqttTzhqmmYgE3hYVRk3PJ18GalmtLXdq7T026ZgfyQwobyLxE4ARJi46yvTLIOFZ4iBjKYKRJPM8ecJz6jaXOGUCvChZG3lheh9Q' \\\n  -H 'origin: https://demo.guru99.com' \\\n  -H 'referer: https://demo.guru99.com/' \\\n  -H 'sec-ch-ua: \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: cross-site' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \\\n  --compressed",
+					"protocol": "https",
+					"host": [
+						"securepubads",
+						"g",
+						"doubleclick",
+						"net"
+					],
+					"path": [
+						"gampad",
+						"ads"
+					],
+					"query": [
+						{
+							"key": "pvsid",
+							"value": "2894339487178896"
+						},
+						{
+							"key": "correlator",
+							"value": "791677570010430"
+						},
+						{
+							"key": "eid",
+							"value": "31070872%2C31061166"
+						},
+						{
+							"key": "output",
+							"value": "ldjh"
+						},
+						{
+							"key": "gdfp_req",
+							"value": "1"
+						},
+						{
+							"key": "vrg",
+							"value": "2022120501"
+						},
+						{
+							"key": "ptt",
+							"value": "17"
+						},
+						{
+							"key": "impl",
+							"value": "fif"
+						},
+						{
+							"key": "gdpr",
+							"value": "0"
+						},
+						{
+							"key": "us_privacy",
+							"value": "1---"
+						},
+						{
+							"key": "iu_parts",
+							"value": "24132379%2CINTERSTITIAL_DemoGuru99"
+						},
+						{
+							"key": "enc_prev_ius",
+							"value": "%2F0%2F1"
+						},
+						{
+							"key": "prev_iu_szs",
+							"value": "1x1"
+						},
+						{
+							"key": "ifi",
+							"value": "1"
+						},
+						{
+							"key": "adks",
+							"value": "3772837431"
+						},
+						{
+							"key": "sfv",
+							"value": "1-0-40"
+						},
+						{
+							"key": "ists",
+							"value": "1"
+						},
+						{
+							"key": "fas",
+							"value": "8"
+						},
+						{
+							"key": "eri",
+							"value": "1"
+						},
+						{
+							"key": "cust_params",
+							"value": "TestMode%3DTrue"
+						},
+						{
+							"key": "sc",
+							"value": "1"
+						},
+						{
+							"key": "cookie",
+							"value": "ID%3Daece63427790acf9-226adfb8b1d800c1%3AT%3D1669870503%3AS%3DALNI_Mb96x-vDC5jfIH_ZKf2GrBwKXooAA"
+						},
+						{
+							"key": "gpic",
+							"value": "UID%3D00000b87e850f24f%3AT%3D1669870503%3ART%3D1671450287%3AS%3DALNI_Mb0ngG2FkuYkw2kg3cDpyyhCRTcBA"
+						},
+						{
+							"key": "abxe",
+							"value": "1"
+						},
+						{
+							"key": "dt",
+							"value": "1671450470691"
+						},
+						{
+							"key": "lmt",
+							"value": "1641482410"
+						},
+						{
+							"key": "dlt",
+							"value": "1671450469773"
+						},
+						{
+							"key": "idt",
+							"value": "248"
+						},
+						{
+							"key": "biw",
+							"value": "764"
+						},
+						{
+							"key": "bih",
+							"value": "649"
+						},
+						{
+							"key": "scr_x",
+							"value": "0"
+						},
+						{
+							"key": "scr_y",
+							"value": "0"
+						},
+						{
+							"key": "btvi",
+							"value": "-1"
+						},
+						{
+							"key": "ucis",
+							"value": "1"
+						},
+						{
+							"key": "oid",
+							"value": "2"
+						},
+						{
+							"key": "u_his",
+							"value": "5"
+						},
+						{
+							"key": "u_h",
+							"value": "768"
+						},
+						{
+							"key": "u_w",
+							"value": "1366"
+						},
+						{
+							"key": "u_ah",
+							"value": "720"
+						},
+						{
+							"key": "u_aw",
+							"value": "1366"
+						},
+						{
+							"key": "u_cd",
+							"value": "24"
+						},
+						{
+							"key": "u_sd",
+							"value": "1"
+						},
+						{
+							"key": "u_tz",
+							"value": "330"
+						},
+						{
+							"key": "wsm",
+							"value": "1"
+						},
+						{
+							"key": "dmc",
+							"value": "8"
+						},
+						{
+							"key": "bc",
+							"value": "31"
+						},
+						{
+							"key": "uach",
+							"value": "WyJXaW5kb3dzIiwiMTQuMC4wIiwieDg2IiwiIiwiMTA4LjAuMTQ2Mi41NCIsW10sZmFsc2UsbnVsbCwiNjQiLFtbIk5vdD9BX0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDguMC41MzU5LjEyNSJdLFsiTWljcm9zb2Z0IEVkZ2UiLCIxMDguMC4xNDYyLjU0Il1dLGZhbHNlXQ.."
+						},
+						{
+							"key": "nvt",
+							"value": "2"
+						},
+						{
+							"key": "url",
+							"value": "https%3A%2F%2Fdemo.guru99.com%2Ftest%2Fsuccess.html"
+						},
+						{
+							"key": "ref",
+							"value": "https%3A%2F%2Fdemo.guru99.com%2Ftest%2Flogin.html"
+						},
+						{
+							"key": "frm",
+							"value": "20"
+						},
+						{
+							"key": "vis",
+							"value": "1"
+						},
+						{
+							"key": "psz",
+							"value": "0x-1"
+						},
+						{
+							"key": "msz",
+							"value": "0x-1"
+						},
+						{
+							"key": "fws",
+							"value": "2"
+						},
+						{
+							"key": "ohw",
+							"value": "0"
+						},
+						{
+							"key": "ga_vid",
+							"value": "650390710.1669870503"
+						},
+						{
+							"key": "ga_sid",
+							"value": "1671450471"
+						},
+						{
+							"key": "ga_hid",
+							"value": "288991377"
+						},
+						{
+							"key": "ga_fc",
+							"value": "true"
+						},
+						{
+							"key": "a3p",
+							"value": "EloKDWNyd2RjbnRybC5uZXQSQDlmMjlkZWFhMjI1ZWI0NzI4MTM4OTM3OTFjNzMxNmQ1MzkzODNmZTI2YzhkODM1ODUzMWMwZDQ5YzAxNTk5YzQYzsHN0dIwSAASOwoKcHViY2lkLm9yZxIkNmNhYzc4OWUtY2JjNy00ZTI1LWEwZTEtOWEwNzI0MWVmODhmGMfBzdHSMEgAEvYBCg5lc3AuY3JpdGVvLmNvbRLaAUQ2WmVNVjlMWW5sclluTk1WVVZsZGpCUE1XTjVhVTFwWmpkc1JsVTVVM1JoTUZCbVVsWjBhVEpSYUZWcGNuRnRORlJNTXpsYWNrZHNUMlp4U0c0MGFERllha2REYUVKSU5IQWxNa1p1WldoWGVXaGtWR3B2VmpGUU9FczNaMkZrZFdGc1ZVWkVjbXgwZGtwUU5IUlBUMUIyTVhJeE9XWlZORUpvTkZwS1FqZE9iak40U1dJM1VYbHdUVFY2VDJSWFJsbHJibEpPWkZSd1REVnJkeVV6UkNVelJBGJbFzdHSMEgAEtYBCghydGJob3VzZRLAAU5nS0tzNEpkRHhYcHhucXF1Q0ovZkE4bHF1WGpnbDFtcmh5M3hwenAzVFZIZjNEU2NPdnVEYnBqNG9VczhsU2lsYzByKzdxU0hVVStQSDU5Ti9aVzFYaVdKVTBJOGZXNDQ2QStlL3NFNHRUeUtiVk1UWStJMUw2a1ZSNlRpNllvZ3JPaE1kWkRmZ2ZDVUdGeGc1UTlIN2ljQ1FtUTFWQURLZVp5bzM4Unk1VXhEQzZzSEJrMzR1VmRmWHEwL0JzZhidys3R0jBIABIUCgVvcGVueBiC2s3R0jBIAFICCG8SGQoKdWlkYXBpLmNvbRivvs3R0jBIAFICCGQSGwoMaWQ1LXN5bmMuY29tGIXPzdHSMEgAUgIIag..' \\\n  -H 'authority: securepubads.g.doubleclick.net' \\\n  -H 'accept: */*' \\\n  -H 'accept-language: en-US,en;q=0.9' \\\n  -H 'cookie: IDE=AHWqTUmfS5huh9LFDwBEEkdUyayor4JK_diS6Y4paxknocz8pcFjiCtt-CUsXxYPn6w; DSID=AOKRq4pzaGa_9IKXWyqbtYSmn84TkZj2GaaVlW6uolKF0TVx3zpt5egmfrQoiXZiPN_tx1wBDhUUdSM-xGzIw7K2TO5Ql7jeriKoA23NdpaT1LPVW-40JmqvDKqUwnmJJ_Qpy71U4u6KDyc8xNJALzGVdJLjYE6G7Rk4U4qow_6QjG39tp4KBFaL47pLMeqttTzhqmmYgE3hYVRk3PJ18GalmtLXdq7T026ZgfyQwobyLxE4ARJi46yvTLIOFZ4iBjKYKRJPM8ecJz6jaXOGUCvChZG3lheh9Q' \\\n  -H 'origin: https://demo.guru99.com' \\\n  -H 'referer: https://demo.guru99.com/' \\\n  -H 'sec-ch-ua: \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: cross-site' \\\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54' \\\n  --compressed"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
