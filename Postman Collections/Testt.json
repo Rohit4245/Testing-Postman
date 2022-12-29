@@ -205,7 +205,7 @@
 							"\r",
 							"const validate = ajv.compile(schema)\r",
 							"const valid = validate(data)\r",
-							"if (valid) console.log(validate.errors)\r",
+							"if (!valid) console.log(validate.errors)\r",
 							"});"
 						],
 						"type": "text/javascript"
