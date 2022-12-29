@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "74c2766c-ca4d-4b0d-9c7e-1701551eecf8",
+		"name": "1. LocalServerPerson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local Variables",
+			"item": [
+				{
+					"name": "Integration scenarios",
+					"item": [
+						{
+							"name": "Create a person",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "09e4a4d6-d284-4bfa-85ca-7febcfa05a51",
+										"exec": [
+											"pm.test(\"Your test name\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"\r",
+											"    pm.environment.set(\"id\", jsonData.id);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"_postman_id": "41e86ca3-ed7a-447c-a54a-e5efad751da9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"firstName\": \"Lucky\",\r\n      \"lastName\": \"Doe\",\r\n      \"age\": 26,\r\n      \"address\": \"Chicago,USA\",\r\n      \"phoneNumbers\": \"123-456-78910\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://{{url}}/persons"
+							},
+							"response": []
+						},
+						{
+							"name": "Get single Person",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d96a8cb2-2c63-447e-b5ae-a812ccd86cfe",
+										"exec": [
+											"var Id =pm.environment.get(\"id\");\r",
+											"pm.environment.set(\"id\",5);\r",
+											"console.log(pm.environment.get(\"id\"));"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"_postman_id": "1b6df416-8ca1-411e-bb84-ac18b7ef22fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/persons/{{id}}"
+							},
+							"response": []
+						},
+						{
+							"name": "UpdatePerson",
+							"_postman_id": "b1aa2e2a-aa8d-4bce-af27-10cbb9a14a4f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n    \"address\": \"London,USA\",\r\n    \"phoneNumbers\": \"123-456-78910\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:3000/persons/{{id}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Get single Person again",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d96a8cb2-2c63-447e-b5ae-a812ccd86cfe",
+										"exec": [
+											"var Id =pm.environment.get(\"id\");\r",
+											"pm.environment.set(\"id\",5);\r",
+											"console.log(pm.environment.get(\"id\"));"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"_postman_id": "a3cd97ec-59e1-4201-ab3b-52bafc3e1d82",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/persons/{{id}}"
+							},
+							"response": []
+						}
+					],
+					"_postman_id": "aad04e95-1722-4dbb-9d10-e5db95328356",
+					"_postman_isSubFolder": true
+				}
+			],
+			"_postman_id": "37887b74-ff71-489f-b6c0-18d2d2e70ed4"
+		},
+		{
+			"name": "FIle Upload Api",
+			"item": [
+				{
+					"name": "GetImage With QAuth2",
+					"_postman_id": "caff92d6-5c5d-47f0-acb4-867d965029a5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "fe071c84-3aae-4716-92e8-82536c4a7421"
+		},
+		{
+			"name": "GetAllPersons",
+			"_postman_id": "5890df9a-6d90-404f-b98c-2e06281a8bbd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/persons"
+			},
+			"response": [
+				{
+					"id": "cdff97a0-2f24-45e6-a6e0-64ce370735bf",
+					"name": "Get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:3000/persons"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "756"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f4-b5mDC+QlAAesXQThKUKwcy6hh5E\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Dec 2022 11:59:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"firstName\": \"Jhon\",\n        \"lastName\": \"Doe\",\n        \"age\": 26,\n        \"id\": 1,\n        \"address\": \"Chicago,USA\",\n        \"phoneNumbers\": \"123-456-78910\"\n    },\n    {\n        \"firstName\": \"two\",\n        \"lastName\": \"Doe\",\n        \"age\": 26,\n        \"address\": \"Chicago,USA\",\n        \"phoneNumbers\": \"123-456-78910\",\n        \"id\": 2\n    },\n    {\n        \"firstName\": \"four\",\n        \"lastName\": \"Doe\",\n        \"age\": 26,\n        \"address\": \"Chicago,USA\",\n        \"phoneNumbers\": \"123-456-78910\",\n        \"id\": 5\n    },\n    {\n        \"firstName\": \"four\",\n        \"lastName\": \"Doe\",\n        \"age\": 26,\n        \"address\": \"Chicago,USA\",\n        \"phoneNumbers\": \"123-456-78910\",\n        \"id\": 6\n    },\n    {\n        \"firstName\": \"four\",\n        \"lastName\": \"Doe\",\n        \"age\": 26,\n        \"address\": \"Chicago,USA\",\n        \"phoneNumbers\": \"123-456-78910\",\n        \"id\": 7\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetSinglePerson",
+			"_postman_id": "4d50ab8d-f7b5-4b6e-8f6d-adeb4adb35e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"threethree123\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/persons/3"
+			},
+			"response": []
+		},
+		{
+			"name": "CreatePerson",
+			"_postman_id": "168b427e-804c-4788-bbf9-4794131ce931",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\": \"four\",\r\n      \"lastName\": \"Doe\",\r\n      \"age\": 26,\r\n      \"address\": \"Chicago,USA\",\r\n      \"phoneNumbers\": \"123-456-78910\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Update person",
+			"_postman_id": "304f738f-254e-4c4b-9824-0fa47926ded8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"firstName\": \"threethree123\"\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/persons/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Full person",
+			"_postman_id": "8b98f7b7-7274-4c64-901b-bec17f7ab812",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"jhon\",\r\n        \"lastName\": \"Doe\",\r\n        \"age\": 26,\r\n        \"address\": \"Chicago,USA\",\r\n        \"phoneNumbers\": \"123-456-78910\",\r\n        \"id\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Single",
+			"_postman_id": "a0e6e50b-b73b-456b-92d6-6d606aa02a66",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/persons/3"
+			},
+			"response": []
+		},
+		{
+			"name": "https://reqres.in/api/users/2",
+			"_postman_id": "ac921a96-935e-4d20-aab6-d9e7084fa551",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		}
+	]
+}
