@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "New Request",
-			"_postman_id": "96273121-511f-4fa1-b7d4-a3ff505ceadb",
+			"id": "96273121-511f-4fa1-b7d4-a3ff505ceadb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -205,14 +205,14 @@
 							"\r",
 							"const validate = ajv.compile(schema)\r",
 							"const valid = validate(data)\r",
-							"if (!valid) console.log(validate.errors)\r",
+							"if (valid) console.log(validate.errors)\r",
 							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "6689f5f1-6322-448b-9273-de9177b5ea2e",
+			"id": "6689f5f1-6322-448b-9273-de9177b5ea2e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
